@@ -10,6 +10,8 @@ This is a sample project that serves as an introduction to the Serverless Framew
 
 ### Env variables files
 Please refer to the following gists files and create the corresponding environmental files as they should not be uploaded to the repository!
+- [global env variables](https://gist.github.com/MatiasComercio/e18d7316354636bff5fec80937c59e8a)
+- [service1 env variables](https://gist.github.com/MatiasComercio/c419c8779799ec4e5f7dff2e8713b960)
 
 ### Go!
 Now you should be able to run the example using the serverless commands.
