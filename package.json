@@ -1,0 +1,19 @@
+{
+  "name": "serverless-sample",
+  "version": "1.0.0",
+  "description": "Serverless Sample",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Wolox",
+  "license": "MIT",
+  "devDependencies": {
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1"
+  }
+}

@@ -1,0 +1,24 @@
+service: service1
+
+# Pin your service to only deploy with a specific Serverless version
+frameworkVersion: ">=1.0.0 <2.0.0"
+
+custom:
+  # Use the stage CLI option if it exists, if not, use the default stage
+  stage: ${opt:stage, self:provider.stage}
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  versionFunctions: false # Optional function versioning
+  # Service defaults
+  stage: dev
+  region: us-east-1
+  # Service env variables
+  environment: ${file(../serverless-${self:custom.stage}.env.yml)}
+
+functions:
+  function1:
+    handler: handler.handle
+    # Function env variables
+    environment: ${file(./serverless-${self:custom.stage}.env.yml)}
